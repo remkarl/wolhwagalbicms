@@ -1,0 +1,12 @@
+title: Wolhwa Galbi
+description: Korean Restaurant
+url: https://wolhwagalbi.ph
+baseurl: ""
+
+markdownL kramdown
+theme: minima
+
+collections:
+  pages:
+    output: true
+    permalink: /:title/

@@ -1,0 +1,31 @@
+backend:
+  name: github
+  repo: remkarl/wolhwagalbi # 🔴 CHANGE if repo name differs
+  branch: main
+
+media_folder: "assets/uploads"
+public_folder: "/assets/uploads"
+
+site_url: https://wolhwagalbi.ph
+logo_url: https://wolhwagalbi.ph/assets/logo.png
+
+collections:
+  - name: "pages"
+    label: "Pages"
+    folder: "_pages"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Layout", name: "layout", widget: "hidden", default: "pages" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  
+  - name: "posts"
+    label: "Announcements"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Body", name: "body", widget: "markdown" }
