@@ -2,6 +2,8 @@ backend:
   name: github
   repo: remkarl/wolhwagalbi # 🔴 CHANGE if repo name differs
   branch: main
+  client_id: IDOv23li1TvItrsW0HYkky # 🔴 CHANGE if you have your own GitHub OAuth app
+  client_secret: 1ce813f276fe0b8f390920989e800d80953fc0deT # 🔴 CHANGE
 
 media_folder: "assets/uploads"
 public_folder: "/assets/uploads"
